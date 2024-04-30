@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Wheather.Proxy.Infra.Config\Wheather.Proxy.Infra.Config.csproj" />
+    <ProjectReference Include="..\Wheather.Proxy.Infra.Http\Wheather.Proxy.Infra.Http.csproj" />
+    <ProjectReference Include="..\Wheather.Proxy.Infra.IoC\Wheather.Proxy.Infra.IoC.csproj" />
+  </ItemGroup>
+
 </Project>

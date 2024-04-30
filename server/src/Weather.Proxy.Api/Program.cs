@@ -1,6 +1,13 @@
 using Microsoft.OpenApi.Models;
+using Wheather.Proxy.Infra.Config;
+using Wheather.Proxy.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var apiSettings = builder.Configuration.GetSection("ApiSettings");
+builder.Services.Configure<ApiSettings>(apiSettings);
+
+DependencyContainer.Register(builder.Services);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

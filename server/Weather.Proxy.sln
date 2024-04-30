@@ -3,7 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Proxy.Api", "src\Weather.Proxy.Api\Weather.Proxy.Api.csproj", "{C929CC5E-8FBB-4A58-8546-4EBE0C54CC6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weather.Proxy.Api", "src\Weather.Proxy.Api\Weather.Proxy.Api.csproj", "{C929CC5E-8FBB-4A58-8546-4EBE0C54CC6C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wheather.Proxy.Domain", "src\Wheather.Proxy.Domain\Wheather.Proxy.Domain.csproj", "{93978E30-4A44-42AD-8C2A-668EFA130A45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wheather.Proxy.Infra.Http", "src\Wheather.Proxy.Infra.Http\Wheather.Proxy.Infra.Http.csproj", "{36A22732-E02B-40C1-A22F-BF563B087093}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheather.Proxy.Infra.IoC", "src\Wheather.Proxy.Infra.IoC\Wheather.Proxy.Infra.IoC.csproj", "{5E045E2D-E654-49F7-A64E-8D63A9C69557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wheather.Proxy.Infra.Config", "src\Wheather.Proxy.Infra.Config\Wheather.Proxy.Infra.Config.csproj", "{55698B7A-6087-4A01-ABD7-77DBC2BB6DEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{07CB5B3B-F439-4F24-ACEC-149AA29C29ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{3CD6F254-0150-4F8B-96DF-FE36C2074E10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{1BD145B6-A4F6-40F3-80DE-B909284500B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +29,32 @@ Global
 		{C929CC5E-8FBB-4A58-8546-4EBE0C54CC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C929CC5E-8FBB-4A58-8546-4EBE0C54CC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C929CC5E-8FBB-4A58-8546-4EBE0C54CC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93978E30-4A44-42AD-8C2A-668EFA130A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93978E30-4A44-42AD-8C2A-668EFA130A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93978E30-4A44-42AD-8C2A-668EFA130A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93978E30-4A44-42AD-8C2A-668EFA130A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A22732-E02B-40C1-A22F-BF563B087093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A22732-E02B-40C1-A22F-BF563B087093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A22732-E02B-40C1-A22F-BF563B087093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A22732-E02B-40C1-A22F-BF563B087093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E045E2D-E654-49F7-A64E-8D63A9C69557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E045E2D-E654-49F7-A64E-8D63A9C69557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E045E2D-E654-49F7-A64E-8D63A9C69557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E045E2D-E654-49F7-A64E-8D63A9C69557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55698B7A-6087-4A01-ABD7-77DBC2BB6DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55698B7A-6087-4A01-ABD7-77DBC2BB6DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55698B7A-6087-4A01-ABD7-77DBC2BB6DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55698B7A-6087-4A01-ABD7-77DBC2BB6DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C929CC5E-8FBB-4A58-8546-4EBE0C54CC6C} = {1BD145B6-A4F6-40F3-80DE-B909284500B2}
+		{93978E30-4A44-42AD-8C2A-668EFA130A45} = {07CB5B3B-F439-4F24-ACEC-149AA29C29ED}
+		{36A22732-E02B-40C1-A22F-BF563B087093} = {3CD6F254-0150-4F8B-96DF-FE36C2074E10}
+		{5E045E2D-E654-49F7-A64E-8D63A9C69557} = {3CD6F254-0150-4F8B-96DF-FE36C2074E10}
+		{55698B7A-6087-4A01-ABD7-77DBC2BB6DEE} = {3CD6F254-0150-4F8B-96DF-FE36C2074E10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40DDD30A-D271-45C6-968B-9B999F8DE0B8}
