@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Weather.Proxy.Api.Constants;
 
 namespace Weather.Proxy.Api.Controllers
 {
-    [Route("api")]
+    [Route(Routes.Api)]
     public class HealthcheckController : BaseController
     {
-        [HttpGet("healthcheck")]
+        [HttpGet(Routes.HealthCheck)]
         public IActionResult Index()
         {
             return Ok();
